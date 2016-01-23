@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C724D531C53E7EB00A53EAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724D521C53E7EB00A53EAF /* AppDelegate.swift */; };
-		2C724D551C53E7EB00A53EAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C724D541C53E7EB00A53EAF /* ViewController.swift */; };
 		2C724D581C53E7EB00A53EAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C724D561C53E7EB00A53EAF /* Main.storyboard */; };
 		2C724D5A1C53E7EB00A53EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C724D591C53E7EB00A53EAF /* Assets.xcassets */; };
 		2C724D5D1C53E7EB00A53EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C724D5B1C53E7EB00A53EAF /* LaunchScreen.storyboard */; };
@@ -44,7 +43,6 @@
 /* Begin PBXFileReference section */
 		2C724D4F1C53E7EB00A53EAF /* FirebaseJokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseJokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C724D521C53E7EB00A53EAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C724D541C53E7EB00A53EAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C724D571C53E7EB00A53EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C724D591C53E7EB00A53EAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C724D5C1C53E7EB00A53EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 				2C724D831C53E83C00A53EAF /* Controller */,
 				2C724D841C53E84A00A53EAF /* View */,
 				2C724D521C53E7EB00A53EAF /* AppDelegate.swift */,
-				2C724D541C53E7EB00A53EAF /* ViewController.swift */,
 				2C724D561C53E7EB00A53EAF /* Main.storyboard */,
 				2C724D591C53E7EB00A53EAF /* Assets.xcassets */,
 				2C724D5B1C53E7EB00A53EAF /* LaunchScreen.storyboard */,
@@ -323,7 +320,6 @@
 				2C724D941C53E97800A53EAF /* JokeCellTableViewCell.swift in Sources */,
 				2C724D8E1C53E92000A53EAF /* CreateAccountViewController.swift in Sources */,
 				2C724D8C1C53E90300A53EAF /* LoginViewController.swift in Sources */,
-				2C724D551C53E7EB00A53EAF /* ViewController.swift in Sources */,
 				2C724D8A1C53E8D900A53EAF /* Joke.swift in Sources */,
 				2C724D901C53E93B00A53EAF /* JokesFeedTableViewController.swift in Sources */,
 				2C724D531C53E7EB00A53EAF /* AppDelegate.swift in Sources */,
@@ -554,6 +550,7 @@
 				2C724D791C53E7EB00A53EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C724D7A1C53E7EB00A53EAF /* Build configuration list for PBXNativeTarget "FirebaseJokesTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +559,7 @@
 				2C724D7C1C53E7EB00A53EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C724D7D1C53E7EB00A53EAF /* Build configuration list for PBXNativeTarget "FirebaseJokesUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +568,7 @@
 				2C724D7F1C53E7EB00A53EAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
