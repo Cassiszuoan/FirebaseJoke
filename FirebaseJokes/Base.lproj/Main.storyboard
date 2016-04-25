@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BWq-D7-you">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BWq-D7-you">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -106,7 +106,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="201"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cpy-2B-QA7" id="5CA-eh-Qot">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="200.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4Bf-U6-VTH">
@@ -248,9 +248,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <segue destination="0Km-CT-AMV" kind="show" identifier="NewUserLoggedIn" id="1Ri-md-uhg"/>
-                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -279,6 +276,7 @@
                         <outlet property="emailField" destination="WAS-yt-eCo" id="nH6-3x-87A"/>
                         <outlet property="passwordField" destination="ld5-N5-c04" id="djd-qH-fv2"/>
                         <outlet property="usernameField" destination="E4t-M9-5xE" id="P3X-tm-tyR"/>
+                        <segue destination="0Km-CT-AMV" kind="show" identifier="NewUserLoggedIn" id="k7u-lM-tJi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWw-e9-f2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -326,7 +324,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="x6X-Jq-YoQ" secondAttribute="trailing" constant="83" id="vlo-aB-VFG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Joke" id="JZp-fy-jGY"/>
+                    <navigationItem key="navigationItem" title="Add Joke" id="JZp-fy-jGY">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="KsH-VP-G1V"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="jokeField" destination="Lsg-yZ-RiH" id="JW3-pq-xbb"/>
                     </connections>
@@ -358,6 +358,6 @@
         <image name="thumb-up" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jc8-dV-5G5"/>
+        <segue reference="k7u-lM-tJi"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -24,4 +24,8 @@ class AddJokeViewController: UIViewController {
     @IBAction func saveJoke(sender: AnyObject) {
         
     }
+    
+    @IBAction func logout(sender: AnyObject) {
+        
+    }
 }
