@@ -46,6 +46,17 @@ class DataService {
     }
     
     
+    
+    func  createNewJoke(joke: Dictionary<String,AnyObject>){
+        
+        let firebaseNewJoke = JOKE_REF.childByAutoId()
+        
+        
+        firebaseNewJoke.setValue(joke)
+    }
+    
+    
+    
 
 
 
