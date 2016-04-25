@@ -39,6 +39,13 @@ class DataService {
     }
     
     
+    func  createNewAccount (uid: String , user:Dictionary<String,String>){
+        // A new USer
+        
+        USER_REF.childByAppendingPath(uid).setValue(user)
+    }
+    
+    
 
 
 

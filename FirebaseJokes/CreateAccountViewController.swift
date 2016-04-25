@@ -48,7 +48,7 @@ class CreateAccountViewController: UIViewController {
                     
                     })
                     
-                    // Store the uid for future access !
+                    // Store the uid for future access ! 成功註冊後把uid 存入NSUserDefault 以便下次登入
                     NSUserDefaults.standardUserDefaults().setValue(result["uid"], forKey: "uid")
                     
                     self.performSegueWithIdentifier("NewUserLoggedIn", sender: nil)
