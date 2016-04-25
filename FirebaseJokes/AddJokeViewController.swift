@@ -68,5 +68,14 @@ class AddJokeViewController: UIViewController {
     
     @IBAction func logout(sender: AnyObject) {
         
+        
+        DataService.dataService.CURRENT_USER_REF.unauth()
+        
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
+        //remove uid from storage
+        
+        
+        let loginViewController = self.storyboard!.instantiateViewControllerWithIdentifier("Login")
+        UIApplication.sharedApplication().keyWindow?.rootViewController = loginViewController
     }
 }
