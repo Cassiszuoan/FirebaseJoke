@@ -63,5 +63,18 @@ class Joke {
     
     
     
+    func addSubstractVote(addVote:Bool){
+        if addVote{
+            _jokeVotes = _jokeVotes+1
+        }
+        else{
+            _jokeVotes = jokeVotes-1
+        }
+        
+        _jokeRef.childByAppendingPath("votes").setValue(_jokeVotes)
+    }
+    
+    
+    
 
 }

@@ -66,28 +66,14 @@ class JokesFeedTableViewController: UITableViewController {
         }
         
         
-        func configureCell(Joke:joke){
-            self.joke = joke
-            
-            self.jokeText.text = joke.jokeText
-            self.totalVotesLabel.text = "Total Votes: \(joke.jokeVotes)"
-            self.usernameLabel.text = joke.username
-            
-            voteRef = DataService.dataService.CURRENT_USER_REF.childByAppendingPath("votes").childByAppendingPath(joke.jokeKey)
-            
-            voteRef.observeSingleEventOfType(.Value,withBlock: {snapshot in
-                
-                if let thumbsUpDown = snapshot.value as? NSNull {
-                    print(thumbsUpDown)
-                    self.thumbVoteImage.image = UIImage(named: "thumb-down")
-                }else{
-                    
-                    self.thumbVoteImage.image = UIImage ( named: "thumb-up")
-                }
-                
-                
         }
-        
-    }
     
+    
+    
+    
+   
+    
+    
+
+
 }
